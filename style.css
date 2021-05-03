@@ -12,6 +12,9 @@ body {
   background-color: black;
 }
 
+body#front-page {
+  overflow: hidden;
+}
 body#front-page a {
   color: white;
 }
