@@ -1,6 +1,5 @@
 @use 'common';
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap');
 $background-color: #ddd;
 $img-dir: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/';
 $section-amount: 5;
@@ -13,7 +12,6 @@ $section-rotate: 15;
 }
 
 body {
-  font-family: 'IBM Plex Mono', monospace;
   width: 100%;
   height: 100%;
   font-size: 16px;
@@ -24,6 +22,8 @@ body {
 }
 
 body#front-page {
+  font-family: 'IBM Plex Mono', monospace;
+
   a {
     color: white;
   }
@@ -144,23 +144,5 @@ body#front-page {
   h2 {
     font-size: 32px;
     margin-bottom: 12px;
-  }
-
-  span {
-    position: fixed;
-    top: 12px;
-    left: 12px;
-    padding: 8px 12px;
-    font-size: 10px;
-    text-transform: uppercase;
-    color: white;
-    background-color: black;
-    border: none;
-    outline: none;
-    cursor: pointer;
-
-    a {
-      text-decoration: none;
-    }
   }
 }
