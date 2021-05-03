@@ -9,7 +9,6 @@ body {
   line-height: 1.4;
   background-color: #fff;
   margin: 0;
-  padding: 8px;
   color: #111;
 }
 
@@ -47,8 +46,7 @@ main {
   & > section.text {
     max-width: $max-width;
     margin: 0 auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 25px 8px;
   }
 
   & > section.two-col {
