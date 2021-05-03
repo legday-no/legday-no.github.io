@@ -19,6 +19,8 @@ body {
 }
 
 body#front-page {
+  overflow: hidden;
+
   a {
     color: white;
   }
