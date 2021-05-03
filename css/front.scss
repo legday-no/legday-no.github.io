@@ -1,12 +1,15 @@
+@use 'common';
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap');
 $background-color: #ddd;
 $img-dir: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/';
 $section-amount: 5;
 $section-rotate: 15;
-$mq-desktop: 'min-width: 630px';
 
-* {
-  box-sizing: border-box;
+@mixin desktop {
+  @media screen and (orientation: landscape) and (min-width: 800px) {
+    @content;
+  }
 }
 
 body {
@@ -16,11 +19,11 @@ body {
   font-size: 16px;
   line-height: 1.4;
   background-color: black;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 body#front-page {
-  overflow: hidden;
-
   a {
     color: white;
   }
@@ -29,7 +32,7 @@ body#front-page {
     flex-direction: column;
     width: 100%;
     transform: translate3d(0, 0, 0);
-    @media ($mq-desktop) {
+    @include desktop {
       flex-direction: row;
       width: 100% + ($section-rotate * 2);
       margin-left: percentage($section-rotate) * -0.01;
@@ -43,7 +46,7 @@ body#front-page {
         opacity: 1;
         transform: translateY(0);
         transition: opacity 0.2s 0.2s, transform 0.2s 0.2s;
-        @media ($mq-desktop) {
+        @include desktop {
           transform: translateY(0) skewX(-#{$section-rotate}deg);
         }
       }
@@ -78,7 +81,7 @@ body#front-page {
       opacity: 0;
       transition: opacity 0.2s;
     }
-    @media ($mq-desktop) {
+    @include desktop {
       width: 20%;
       height: 100vh;
       margin-right: -1px;
@@ -123,7 +126,7 @@ body#front-page {
     color: white;
     z-index: 1;
     transition: opacity 0.2s, transform 0.2s;
-    @media ($mq-desktop) {
+    @include desktop {
       display: flex;
       flex-direction: column;
       align-items: center;

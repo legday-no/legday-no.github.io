@@ -1,6 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap");
 * {
   box-sizing: border-box;
+}
+
+#footer,
+footer {
+  display: block;
+  text-align: right;
+  font-size: 1em;
 }
 
 body {
@@ -10,11 +18,10 @@ body {
   font-size: 16px;
   line-height: 1.4;
   background-color: black;
+  margin: 0;
+  overflow-x: hidden;
 }
 
-body#front-page {
-  overflow: hidden;
-}
 body#front-page a {
   color: white;
 }
@@ -24,7 +31,7 @@ body#front-page main {
   width: 100%;
   transform: translate3d(0, 0, 0);
 }
-@media (min-width: 630px) {
+@media screen and (orientation: landscape) and (min-width: 800px) {
   body#front-page main {
     flex-direction: row;
     width: 130%;
@@ -42,7 +49,7 @@ body#front-page main section:not(:first-child):not(:last-child):hover .navitem {
   transform: translateY(0);
   transition: opacity 0.2s 0.2s, transform 0.2s 0.2s;
 }
-@media (min-width: 630px) {
+@media screen and (orientation: landscape) and (min-width: 800px) {
   body#front-page main section:not(:first-child):not(:last-child):hover .navitem {
     transform: translateY(0) skewX(-15deg);
   }
@@ -76,7 +83,7 @@ body#front-page section:after {
   opacity: 0;
   transition: opacity 0.2s;
 }
-@media (min-width: 630px) {
+@media screen and (orientation: landscape) and (min-width: 800px) {
   body#front-page section {
     width: 20%;
     height: 100vh;
@@ -179,7 +186,7 @@ body#front-page .navitem {
   z-index: 1;
   transition: opacity 0.2s, transform 0.2s;
 }
-@media (min-width: 630px) {
+@media screen and (orientation: landscape) and (min-width: 800px) {
   body#front-page .navitem {
     display: flex;
     flex-direction: column;
@@ -215,4 +222,4 @@ body#front-page span a {
   text-decoration: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=front.css.map */
