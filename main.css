@@ -147,4 +147,17 @@ main#acroyoga h6 {
   font-family: "Merienda", cursive;
 }
 
+main#software header {
+  background-image: url("img/software-header.jpeg");
+  color: white;
+}
+
+main#product header {
+  background-image: url("img/product-header.webp");
+  color: white;
+}
+main#product header h1 {
+  padding-right: 200px;
+}
+
 /*# sourceMappingURL=main.css.map */

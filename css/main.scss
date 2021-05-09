@@ -124,3 +124,21 @@ main#acroyoga {
     font-family: 'Merienda', cursive;
   }
 }
+
+main#software {
+  header {
+    background-image: url('img/software-header.jpeg');
+    color: white;
+  }
+}
+
+main#product {
+  header {
+    background-image: url('img/product-header.webp');
+    color: white;
+
+    h1 {
+      padding-right: 200px;
+    }
+  }
+}
