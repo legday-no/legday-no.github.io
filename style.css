@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Montserrat:wght@100;200;400&family=Roboto&display=swap");
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+.exercept {
+  font-weight: 200;
+  font-size: 1.5em;
+  color: #333;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #555;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+}
+
+.page {
+  display: flex;
+}
+
+#context {
+  position: sticky;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  padding: 16px;
+  flex-shrink: 0;
+  border-right: 1px solid #eee;
+  font-size: 1.4em;
+}
+#context a {
+  color: #393939;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+#context a:hover {
+  color: #666;
+}
+#context header {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#context nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+#context nav ul li {
+  margin-bottom: 12px;
+}
+#context #social {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-size: 1.1em;
+}
+#main header {
+  width: 100%;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main header#banner-acro {
+  background-image: url(https://d1j4p94w54mk15.cloudfront.net/media/images/4M6A3534-Edit-Edit.jpg);
+}
+#main header#banner-product {
+  background-image: url(../img/product-header.webp);
+}
+#main header#banner-software {
+  background-image: url(../img/software-header.jpeg);
+}
+#main header h1 {
+  background-color: #eeec;
+  padding: 5px;
+  border-radius: 3px;
+}
+#main header h1 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: normal;
+  text-transform: full-width;
+  font-size: 2.4em;
+}
+#main #content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+#main #content-wrapper #content {
+  padding: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+}
+#main #content-wrapper #content > section.two-col {
+  display: flex;
+  flex-wrap: wrap;
+}
+#main #content-wrapper #content > section.two-col.middle {
+  align-items: center;
+  justify-content: center;
+}
+#main #content-wrapper #content > section.two-col > div {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+#main #content-wrapper #content > section.two-col > div img {
+  width: 100%;
+  border-radius: 10px;
+}
+#main #content-wrapper #content > section.two-col > div p {
+  margin-top: 0;
+}
+#main #content-wrapper #content > section.two-col > div > * {
+  padding: 5px;
+}
+#main footer {
+  border-top: 1px solid #eee;
+  margin-top: 48px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: initial;
+  text-align: right;
+}
+
+span#me {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  padding: 8px 12px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+}
+span#me a {
+  text-decoration: none;
+  color: white;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+article {
+  padding-top: 50px;
+}
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  margin: 0;
+}
+article section {
+  margin-bottom: 50px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+section.bullets {
+  display: flex;
+  flex-direction: row;
+}
+section.bullets .bullet {
+  text-align: center;
+  width: 33%;
+  padding: 10px;
+}
+section.bullets .bullet .material-icons {
+  font-size: 100px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
