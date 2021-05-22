@@ -25,17 +25,18 @@ $borderColor: #eee;
 
 .exercept {
   font-weight: 200;
-  font-size: 1.5em;
-  color: #333;
-  line-height: 1.5;
+  font-size: 28px;
+  line-height: 1.6;
+  color: #222;
 }
 
-body,
-html {
+body {
   margin: 0;
   padding: 0;
 
   font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  line-height: 1.35;
   color: #555;
 }
 * {
@@ -63,7 +64,7 @@ h6 {
   padding: $padding;
   flex-shrink: 0;
   border-right: 1px solid $borderColor;
-  font-size: 1.4em;
+  font-size: 26px;
 
   #expand-button {
     display: none;
@@ -111,23 +112,20 @@ h6 {
   flex-direction: column;
   flex-grow: 1;
 
-  font-size: 1.1em;
-
   header {
     &#banner-acro {
-      // background-image: url(https://live.staticflickr.com/4754/39390365535_65f3d4356f_b.jpg);
       background-image: url(https://d1j4p94w54mk15.cloudfront.net/media/images/4M6A3534-Edit-Edit.jpg);
     }
-    &#banner-product {
+    &#banner-products {
       background-image: url(../img/product-header.webp);
     }
-    &#banner-software {
+    &#banner-consulting {
       background-image: url(../img/software-header.jpeg);
     }
 
     h1 {
       background-color: #eeec;
-      padding: 5px;
+      padding: 20px 10px;
       border-radius: 3px;
     }
 
@@ -146,7 +144,7 @@ h6 {
       font-family: 'IBM Plex Mono', monospace;
       font-weight: normal;
       text-transform: full-width;
-      font-size: 2.4em;
+      font-size: 48px;
     }
   }
 
@@ -162,40 +160,35 @@ h6 {
       margin: 0 auto;
       width: 100%;
 
-      & > section.two-col {
-        display: flex;
-        flex-wrap: wrap;
+      & > h1,
+      & > h2,
+      & > h3,
+      & > h4,
+      & > h5,
+      & > h6 {
+        margin: 0;
+        margin-bottom: 10px;
 
-        &.middle {
-          align-items: center;
-          justify-content: center;
-        }
-
-        & > div {
+        &::after {
+          content: '';
           display: block;
-          margin: 0;
-          padding: 0;
-          width: 50%;
-
-          img {
-            width: 100%;
-            border-radius: 10px;
-          }
-
-          p {
-            margin-top: 0;
-          }
-
-          & > * {
-            padding: 5px;
-          }
+          border-bottom: 1px solid #666;
+          max-width: 50px;
         }
+      }
+
+      section {
+        margin-bottom: 50px;
+        width: 100%;
+      }
+
+      a {
+        color: chocolate;
       }
     }
   }
 
   footer {
-    // border-top: 1px solid $borderColor;
     padding: 24px;
     font-size: initial;
     text-align: right;
@@ -238,25 +231,6 @@ span#me {
   }
 }
 
-article {
-  padding-top: 50px;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-  }
-
-  section {
-    margin-bottom: 50px;
-    margin-top: 15px;
-    width: 100%;
-  }
-}
-
 section.bullets {
   display: flex;
   flex-direction: row;
@@ -270,6 +244,89 @@ section.bullets {
       font-size: 100px;
       text-align: center;
     }
+  }
+}
+
+section.two-col {
+  display: flex;
+  flex-wrap: wrap;
+
+  &.middle {
+    align-items: center;
+    justify-content: center;
+  }
+
+  & > div {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    & > * {
+      padding: 5px;
+    }
+  }
+}
+
+section.logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  & > img {
+    padding: 25px;
+    width: 20%;
+  }
+}
+
+section.lefticon {
+  & > div {
+    display: flex;
+    margin-bottom: 25px;
+
+    span {
+      font-size: 100px;
+      padding: 10px;
+    }
+
+    div > * {
+      margin: 8px 0;
+    }
+  }
+}
+
+section.highlight {
+  font-size: 32px;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+section.calendar {
+  display: flex;
+  font-size: initial;
+
+  & > * {
+    width: 14%;
+    margin: 8px;
   }
 }
 
@@ -294,7 +351,7 @@ section.bullets {
     }
 
     #expand-button {
-      padding: 8px;
+      padding: 24px;
       cursor: pointer;
       display: block;
     }
@@ -308,6 +365,7 @@ section.bullets {
     }
 
     nav {
+      margin-top: 48px;
       text-align: right;
     }
   }
