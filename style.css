@@ -135,6 +135,7 @@ h6 {
 #main #content-wrapper #content {
   padding: 16px;
   max-width: 960px;
+  min-height: 500px;
   margin: 0 auto;
   width: 100%;
 }
@@ -163,10 +164,7 @@ h6 {
   padding: 5px;
 }
 #main footer {
-  border-top: 1px solid #eee;
-  margin-top: 48px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px;
   font-size: initial;
   text-align: right;
 }
