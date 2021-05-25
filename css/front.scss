@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300&family=Merienda:wght@700&display=swap');
+
 $background-color: #ddd;
-$img-dir: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/';
+// $img-dir: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/';
+$img-dir: '/img/front/';
 $section-amount: 5;
 $section-rotate: 15;
 
@@ -12,7 +15,7 @@ $section-rotate: 15;
 body {
   width: 100%;
   height: 100%;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.4;
   background-color: black;
   margin: 0;
@@ -35,6 +38,16 @@ body#front-page {
       width: 100% + ($section-rotate * 2);
       margin-left: percentage($section-rotate) * -0.01;
     }
+
+    section {
+      &:after {
+        @include desktop {
+          opacity: 0;
+        }
+        opacity: 0.6;
+      }
+    }
+
     section:not(:first-child):not(:last-child):hover {
       flex: 2;
       &:after {
@@ -144,8 +157,6 @@ body#front-page {
     margin-bottom: 12px;
   }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300&family=Merienda:wght@700&display=swap');
 
 * {
   box-sizing: border-box;

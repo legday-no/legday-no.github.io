@@ -19,8 +19,8 @@
 
 .exercept {
   font-weight: 200;
-  font-size: 28px;
-  line-height: 1.6;
+  font-size: 30px;
+  line-height: 1.55;
   color: #222;
 }
 
@@ -28,8 +28,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
-  line-height: 1.35;
+  font-size: 24px;
+  line-height: 1.45;
   color: #555;
 }
 
@@ -96,7 +96,7 @@ h6 {
   flex-direction: column;
   flex-grow: 1;
 }
-#main header {
+#main > header {
   width: 100%;
   min-height: 400px;
   background-repeat: no-repeat;
@@ -107,21 +107,21 @@ h6 {
   align-items: center;
   justify-content: center;
 }
-#main header#banner-acro {
+#main > header#banner-acro {
   background-image: url(https://d1j4p94w54mk15.cloudfront.net/media/images/4M6A3534-Edit-Edit.jpg);
 }
-#main header#banner-products {
+#main > header#banner-products {
   background-image: url(../img/product-header.webp);
 }
-#main header#banner-consulting {
+#main > header#banner-consulting {
   background-image: url(../img/software-header.jpeg);
 }
-#main header h1 {
+#main > header h1 {
   background-color: #eeec;
   padding: 20px 10px;
   border-radius: 3px;
 }
-#main header h1 {
+#main > header h1 {
   font-family: "IBM Plex Mono", monospace;
   font-weight: normal;
   text-transform: full-width;
@@ -152,6 +152,9 @@ h6 {
 #main #content-wrapper #content section {
   margin-bottom: 50px;
   width: 100%;
+}
+#main #content-wrapper #content section.nomargin {
+  margin: 0;
 }
 #main #content-wrapper #content a {
   color: chocolate;
@@ -235,13 +238,16 @@ section.two-col > div h6 {
 }
 section.two-col > div img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 section.two-col > div p {
   margin-top: 0;
 }
-section.two-col > div > * {
-  padding: 5px;
+section.two-col > div:nth-child(odd) {
+  padding-right: 10px;
+}
+section.two-col > div:nth-child(even) {
+  padding-left: 10px;
 }
 
 section.logos {
@@ -261,7 +267,7 @@ section.lefticon > div {
 }
 section.lefticon > div span {
   font-size: 100px;
-  padding: 10px;
+  padding: 16px;
 }
 section.lefticon > div div > * {
   margin: 8px 0;
@@ -275,11 +281,22 @@ section.highlight {
 
 section.calendar {
   display: flex;
-  font-size: initial;
 }
 section.calendar > * {
   width: 14%;
   margin: 8px;
+}
+
+section.events .event > h3 {
+  margin-bottom: 5px;
+}
+section.events .event > div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+section.events .event > div > div {
+  width: 50%;
 }
 
 @media only screen and (max-width: 960px), only screen and (hover: none) and (pointer: coarse) {
