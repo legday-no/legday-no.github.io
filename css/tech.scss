@@ -1,0 +1,35 @@
+div#companies {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  & > img {
+    padding: 25px;
+    width: 20%;
+
+    @media only screen and (max-width: 1200px), only screen and (hover: none) and (pointer: coarse) {
+      width: 25%;
+    }
+
+    @media only screen and (max-width: 960px), only screen and (hover: none) and (pointer: coarse) {
+      width: 33%;
+    }
+  }
+}
+
+section.lefticon {
+  & > div {
+    display: flex;
+    margin-bottom: 25px;
+
+    span {
+      font-size: 100px;
+      padding: 16px;
+    }
+
+    div > * {
+      margin: 8px 0;
+    }
+  }
+}

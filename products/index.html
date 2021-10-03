@@ -1,76 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html style="height: 100%; display: flex; align-items: center; justify-content: center;">
 
 <head>
-    <title>Legday - Products</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Legday Products</title>
+    <link rel="stylesheet" type="text/css" href="/dist/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D2KE768VB7"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-D2KE768VB7');
-    </script>
+    <!-- <script type="text/javascript" src="https://livejs.com/live.js"></script> -->
 </head>
 
-<body>
-    <div class="page">
-        <aside id="context">
-            <span id="expand-button" class="material-icons">menu</span>
-
-            <div id="expand">
-                <header></header>
-                <nav>
-                    <ul>
-                        <li><a href="/consulting/">Consulting</a></li>
-                        <li><a href="/products/">Products</a></li>
-                        <li><a href="/acroyoga/">Acroyoga</a></li>
-                    </ul>
-                </nav>
-
-                <div id="social">
-                    <a href="https://instagram.com/legdayacro" target="_blank" title="@legdayacro">
-                        <img height="42px" src="/img/icon-instagram.png" style="margin-right: 8px;"></a>
-                </div>
-            </div>
-        </aside>
-        <main id="main">
-            <header id="banner-products">
-                <h1>products</h1>
-            </header>
-            <div id=content-wrapper>
-                <article id="content">
-                    <section style="display: flex; align-items: center; justify-content: center; height: 100%;">
-                        <div>
-                            <h2>Coming soon!</h2>
-                            <p>This page is under construction</p>
-                        </div>
-                    </section>
-                </article>
-            </div>
-            <footer>
-                &copy; legday 2021
-            </footer>
-        </main>
+<body style="display: flex; align-items: center; justify-content: center;">
+    <div>
+        <h1 style="font-family: 'Stick No Bills', sans-serif;">Legday Products</h1>
+        <p>Coming soon!</p>
     </div>
-    <span id="me"><a href="/">Legday - H&aring;vard Kindem</a></span>
 
-    <script type="text/javascript">
-        function menuExpand(e) {
-            let expand = document.getElementById('context');
-
-            if (expand.classList.contains('visible')) {
-                expand.classList.remove('visible');
-            } else {
-                expand.classList.add('visible');
-            }
-        }
-        document.addEventListener("DOMContentLoaded", function (event) {
-            document.getElementById('expand-button').addEventListener("click", menuExpand);
-        });
-    </script>
+    <span id="me"><a href="/">Legday.no</a></span>
 </body>
 
 </html>

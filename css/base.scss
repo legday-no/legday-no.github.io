@@ -1,0 +1,128 @@
+$spacing-section: 32px;
+$margin-section: 16px;
+
+$font-main-header: 'Stick No Bills', sans-serif;
+$font-header: 'Noto Sans Display', sans-serif;
+$font: 'Noto Sans Display', sans-serif;
+
+$content-width: 1000px;
+$content-width-narrow: 800px;
+$content-width-wide: 1200px;
+
+$color-accent: #e38a3a;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Stick+No+Bills:wght@700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-header;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  font-size: larger;
+  color: #333;
+}
+
+main {
+  & > header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $spacing-section;
+
+    font-weight: 400;
+    font-size: 32pt;
+    color: white;
+    text-shadow: 3px 3px dimgray;
+
+    &#header-acro {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/header.jpg');
+    }
+
+    &#header-tech {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/header-tech.webp');
+    }
+
+    div {
+      text-align: center;
+
+      h1 {
+        font-family: $font-main-header;
+      }
+
+      img {
+        height: 32px;
+        width: 32px;
+      }
+    }
+  }
+
+  & > section {
+    margin: $spacing-section auto;
+    padding: 0 $margin-section;
+    max-width: $content-width;
+
+    & > h2 {
+      padding-left: 32px;
+      border-bottom: 1px solid lightgray;
+    }
+
+    &#section-intro {
+      max-width: $content-width-wide;
+    }
+
+    &.extra-spacing {
+      margin: 60px auto;
+    }
+
+    &.section-video {
+      max-width: 100%;
+
+      .video-content {
+        max-width: $content-width-narrow;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  #section-intro {
+    .highlights {
+      display: flex;
+      justify-content: space-evenly;
+      font-family: $font-header;
+
+      & > div {
+        margin: 0 50px;
+        text-align: center;
+
+        header {
+          h3 {
+            margin-top: 0;
+            font-size: xx-large;
+          }
+        }
+      }
+      .material-icons {
+        font-size: 100px;
+        color: $color-accent;
+      }
+    }
+  }
+
+  & > footer {
+    text-align: right;
+    padding: 16px;
+  }
+}

@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Stick+No+Bills:wght@700&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: larger;
+  color: #333;
+}
+
+main > header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 32pt;
+  color: white;
+  text-shadow: 3px 3px dimgray;
+}
+main > header#header-acro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/header.jpg");
+}
+main > header#header-tech {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/header-tech.webp");
+}
+main > header div {
+  text-align: center;
+}
+main > header div h1 {
+  font-family: "Stick No Bills", sans-serif;
+}
+main > header div img {
+  height: 32px;
+  width: 32px;
+}
+main > section {
+  margin: 32px auto;
+  padding: 0 16px;
+  max-width: 1000px;
+}
+main > section > h2 {
+  padding-left: 32px;
+  border-bottom: 1px solid lightgray;
+}
+main > section#section-intro {
+  max-width: 1200px;
+}
+main > section.extra-spacing {
+  margin: 60px auto;
+}
+main > section.section-video {
+  max-width: 100%;
+}
+main > section.section-video .video-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+main #section-intro .highlights {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Noto Sans Display", sans-serif;
+}
+main #section-intro .highlights > div {
+  margin: 0 50px;
+  text-align: center;
+}
+main #section-intro .highlights > div header h3 {
+  margin-top: 0;
+  font-size: xx-large;
+}
+main #section-intro .highlights .material-icons {
+  font-size: 100px;
+  color: #e38a3a;
+}
+main > footer {
+  text-align: right;
+  padding: 16px;
+}
+
+div#companies {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+div#companies > img {
+  padding: 25px;
+  width: 20%;
+}
+@media only screen and (max-width: 1200px), only screen and (hover: none) and (pointer: coarse) {
+  div#companies > img {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 960px), only screen and (hover: none) and (pointer: coarse) {
+  div#companies > img {
+    width: 33%;
+  }
+}
+
+section.lefticon > div {
+  display: flex;
+  margin-bottom: 25px;
+}
+section.lefticon > div span {
+  font-size: 100px;
+  padding: 16px;
+}
+section.lefticon > div div > * {
+  margin: 8px 0;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.inline-image {
+  display: flex;
+  align-items: center;
+}
+.inline-image > img {
+  height: 128px;
+  margin-right: 16px;
+}
+
+section.two-col {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.two-col > img {
+  width: 50%;
+}
+
+section#contact-us {
+  padding: 32px 0;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+}
+section#contact-us span {
+  padding: 10px 20px;
+  background-color: #e38a3a;
+  border-radius: 4px;
+}
+section#contact-us a {
+  color: black;
+}
+
+span#me {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  padding: 8px 12px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+}
+span#me a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
