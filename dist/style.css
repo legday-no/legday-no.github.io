@@ -74,12 +74,21 @@ main #section-intro .highlights {
   justify-content: space-evenly;
   font-family: "Noto Sans Display", sans-serif;
 }
+@media screen and (max-width: 800px) {
+  main #section-intro .highlights {
+    flex-direction: column;
+  }
+  main #section-intro .highlights > div {
+    padding-bottom: 32px;
+  }
+}
 main #section-intro .highlights > div {
   margin: 0 50px;
   text-align: center;
 }
 main #section-intro .highlights > div header h3 {
   margin-top: 0;
+  margin-bottom: 8px;
   font-size: xx-large;
 }
 main #section-intro .highlights .material-icons {
