@@ -1,6 +1,24 @@
 @import 'base';
 @import 'tech';
 
+#instagram-section {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+
+  border: 1px solid #e38a3a66;
+  box-shadow: 4px 4px lightgray;
+
+  overflow-y: auto;
+
+  & > iframe {
+    flex-grow: 1;
+    width: 29%;
+    min-width: 200px !important;
+    margin: 0 !important;
+  }
+}
+
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -21,7 +39,8 @@
   display: flex;
   align-items: center;
 
-  & > img {
+  & > img,
+  .inline {
     height: 128px;
     margin-right: 16px;
   }
@@ -36,7 +55,7 @@ section.two-col {
   }
 }
 
-section#contact-us {
+#contact-us {
   padding: $spacing-section 0;
   text-align: center;
   font-size: x-large;

@@ -15,13 +15,14 @@ body {
   font-family: "Noto Sans Display", sans-serif;
   font-size: larger;
   color: #333;
+  min-width: 480px;
 }
 
 main > header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 600px;
+  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,6 +134,21 @@ section.lefticon > div div > * {
   margin: 8px 0;
 }
 
+#instagram-section {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #e38a3a66;
+  box-shadow: 4px 4px lightgray;
+  overflow-y: auto;
+}
+#instagram-section > iframe {
+  flex-grow: 1;
+  width: 29%;
+  min-width: 200px !important;
+  margin: 0 !important;
+}
+
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -153,7 +169,8 @@ section.lefticon > div div > * {
   display: flex;
   align-items: center;
 }
-.inline-image > img {
+.inline-image > img,
+.inline-image .inline {
   height: 128px;
   margin-right: 16px;
 }
@@ -166,18 +183,18 @@ section.two-col > img {
   width: 50%;
 }
 
-section#contact-us {
+#contact-us {
   padding: 32px 0;
   text-align: center;
   font-size: x-large;
   font-weight: bold;
 }
-section#contact-us span {
+#contact-us span {
   padding: 10px 20px;
   background-color: #e38a3a;
   border-radius: 4px;
 }
-section#contact-us a {
+#contact-us a {
   color: black;
 }
 
