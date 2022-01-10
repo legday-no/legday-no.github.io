@@ -192,6 +192,14 @@ section.two-col {
 section.two-col > img {
   width: 50%;
 }
+@media only screen and (max-width: 500px) {
+  section.two-col {
+    flex-direction: column;
+  }
+  section.two-col > img {
+    width: 100%;
+  }
+}
 
 #contact-us {
   padding: 32px 0;
