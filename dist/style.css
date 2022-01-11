@@ -19,6 +19,7 @@ body {
 }
 
 main > header {
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -27,10 +28,7 @@ main > header {
   align-items: center;
   justify-content: center;
   margin-bottom: 32px;
-  font-weight: 400;
-  font-size: 32pt;
-  color: white;
-  text-shadow: 3px 3px dimgray;
+  text-align: center;
 }
 main > header#header-acro {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/header.jpg");
@@ -38,15 +36,26 @@ main > header#header-acro {
 main > header#header-tech {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/header-tech.webp");
 }
-main > header div {
-  text-align: center;
-}
-main > header div h1 {
+main > header h1 {
   font-family: "Stick No Bills", sans-serif;
+  font-weight: 400;
+  font-size: 40pt;
+  color: white;
+  text-shadow: 3px 3px dimgray;
 }
-main > header div img {
-  height: 32px;
-  width: 32px;
+main > header #social-icons {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  margin: 16px;
+}
+main > header #social-icons a {
+  display: inline-block;
+  margin-right: 8px;
+}
+main > header #social-icons img {
+  height: 48px;
+  width: 48px;
 }
 main > section {
   margin: 32px auto;
